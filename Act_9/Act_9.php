@@ -1,9 +1,9 @@
 <?php
 
 //Variable de columnas
-$col = 5;
+$col = 10;
 //Variable de filas
-$fil = 5;
+$fil = $col;
 //Variable que en función de la fila, determina el color del primer cuadrado
 $var_fil;
 
