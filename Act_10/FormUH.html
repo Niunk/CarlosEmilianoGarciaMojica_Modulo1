@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="FormUP.php" method="POST">
+            <fieldset style="width:400px">
+                <legend>Solicitud de ingreso a la uni</legend>
+                <label for="Nombre">Nombre(s):
+                    <input type="text" name="Nombre" placeholder="Ingresa tu nombre" required>
+                </label>
+                <br><br>
+                <label for="ApPat">Apellido paterno:
+                    <input type="text" name="ApPat" placeholder="Ingresa tu apellido paterno" required>
+                </label>
+                <br><br>
+                <label for="ApMat">Apellido materno:
+                    <input type="text" name="ApMat" placeholder="Ingresa tu apellido materno" required>
+                </label>
+                <br><br>
+                Sexo:
+                <label for="Hombre">Hombre:
+                    <input type="radio" value="Hombre" name="genero" required>
+                </label>
+                <label for="Mujer">Mujer:
+                    <input type="radio" value="Mujer" name="genero" requred>
+                </label>
+                <br><br>
+                <label for="Edad">Edad:
+                    <input type="number" name="Edad" max="100" min="18" value="18" required>
+                </label>
+                <br><br>
+                <label for="Correo">Correo:
+                    <input type="email" name="Correo" placeholder="Ingresa tu correo" required>
+                </label>
+                <br><br>
+                <label for="Tel">Telefono:
+                    <input type="tel" name="Tel">
+                </label>
+                <br><br>
+                <label for="Cel">Celular:
+                    <input type="tel" name="Cel">
+                </label>
+                <br>
+                <p>Escuela de procedencia:</p>
+                <select name="EscPr">
+                    <option value="ENP">Escuela Nacional Preparatoria</option>
+                    <option value="CCH">Colegio de Ciencias y Humanidades</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br><br>
+                <label for="Promedio">Promedio:
+                    <input type="number" name="Promedio" value="6" min="6" max="10"> 
+                </label>
+                <br><br>
+                <label for="Op1">Primera opción:
+                    <input type="text" name="Op1" required>
+                </label>
+                <br><br>
+                <label for="op2">Segunda opción:
+                    <input type="text" name="Op2" required>
+                </label>
+                <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </fieldset>
+        </form> 
+    </body>
+</html>
