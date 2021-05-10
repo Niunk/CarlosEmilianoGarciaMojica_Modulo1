@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Act_14</title>
+    </head>
+    <body>
+        <form action="Act_14.php" method="POST">
+            <table>
+            <fieldset style="width:300px">
+                <legend>Reloj Mundial</legend>
+                Ingrese hora(CDMX) <input type="time" name="hora_local">
+                <br><br>
+                <p>Elige los países que quieres consultar</p>
+                <label for="paises">
+                    <p>Nueva York:<input type="checkbox" name="paises[]" value="Nueva York">
+                    Sao Paulo:<input type="checkbox" name="paises[]" value="Sao Paulo"></p>
+                    <p>Madrid:<input type="checkbox" name="paises[]" value="Madrid">
+                    Paris:<input type="checkbox" name="paises[]" value="Paris"></p>
+                    <p>Roma:<input type="checkbox" name="paises[]" value="Roma">
+                    Atenas:<input type="checkbox" name="paises[]" value="Atenas"></p>
+                    <p>Beijing:<input type="checkbox" name="paises[]" value="Beijing"> 
+                    Tokio:<input type="checkbox" name="paises[]" value="Tokio"></p><br>
+                    <input type="submit" name="consulta" value="Consultar">
+                </label>
+            </form>
+        </fieldset>
+            <br><br>
+            <form action="Act_14.php" method="POST">
+            <fieldset style="width:300px">
+                <legend>Calcula cumpleaños</legend>
+                Ingrese su fecha de nacimiento <input type="date" name="cump">
+                <p>¿Qué quieres consultar?</p><br>
+                <label for="tiempos">
+                   Días para próximo cumpleaños:<input type="checkbox" name="tiempos[]" value="dias"><br>
+                    Horas para próximo cumpleaños:<input type="checkbox" name="tiempos[]" value="horas"><br>
+                    Minutos para próximo cumpleaños:<input type="checkbox" name="tiempos[]" value="minutos"><br>
+                    ¿Será en fin de semana?<input type="checkbox" name="tiempos[]" value="finde"><br><br>         
+                    <input type="submit" name="calcula" value="Calcular">          
+                </label>
+            </fieldset>
+        </form>
+        </table>
+    </body>
+</html>
